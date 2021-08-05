@@ -1,0 +1,45 @@
+<!-- Given the following code and the assumption that "body" has 100% height what would you expect the layout to look like and give a brief explanation of why? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .blue {
+            flex: 1;
+            background-color: blue;
+        }
+
+        .red {
+            flex: 1;
+            background-color: red;
+        }
+
+        .yellow {
+            flex: 2;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- Anwser -->
+<p>
+    The yellow element has flex-grow assigned to 2 and blue and red to 1, which means that yellow will be streched to
+    occupy the same as red and blue combined.
+    Something like this: [ ][ ][ ]
+</p>

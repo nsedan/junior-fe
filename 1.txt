@@ -1,0 +1,23 @@
+Given the following code what would you expect to see in the console?
+
+const testArray = [
+  {
+    name: 'John',
+    id: 1,
+  },
+  {
+    name: 'Mary',
+    id: 2,
+  },
+  {
+    name: 'Terry',
+    id: 3,
+  },
+].map((e) => e.id);
+
+console.log(testArray);
+
+
+Anwser: 
+Map method takes an array, itereates through it passing a function on every element of that array and returns another array with the result.
+In this case it will return an array composed with only the ids, like the following [1, 2, 3].

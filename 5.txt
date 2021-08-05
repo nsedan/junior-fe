@@ -1,0 +1,6 @@
+Describe what you know about javascript Promises, why are they needed? What problem do they solve? What is the common promise syntax?
+
+Anwser:
+Promises are a way to allow our app to create separate branches for different tasks called asynchronous tasks, for example if we need to make a API call that could take a few seconds,
+we can avoid delaying the entire app using a promise, like in the previous question.
+A promise can have 3 stages: pending, fulfilled and rejected. 
